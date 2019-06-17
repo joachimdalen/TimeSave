@@ -34,7 +34,6 @@
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SourceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.BwPortFetcher = new System.ComponentModel.BackgroundWorker();
             this.MainMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,12 +87,6 @@
             this.SourceToolStripMenuItem.Text = "Source";
             this.SourceToolStripMenuItem.Click += new System.EventHandler(this.SourceToolStripMenuItem_Click);
             // 
-            // BwPortFetcher
-            // 
-            this.BwPortFetcher.WorkerReportsProgress = true;
-            this.BwPortFetcher.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BwPortFetcher_DoWork);
-            this.BwPortFetcher.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BwPortFetcher_RunWorkerCompleted);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,7 +115,6 @@
         private System.Windows.Forms.MenuStrip MainMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SourceToolStripMenuItem;
-        private System.ComponentModel.BackgroundWorker BwPortFetcher;
     }
 }
 
