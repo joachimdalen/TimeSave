@@ -44,15 +44,18 @@
             this.LbPorts.Name = "LbPorts";
             this.LbPorts.Size = new System.Drawing.Size(211, 56);
             this.LbPorts.TabIndex = 0;
+            this.LbPorts.SelectedIndexChanged += new System.EventHandler(this.LbPorts_SelectedIndexChanged);
             // 
             // BtnStartRead
             // 
+            this.BtnStartRead.Enabled = false;
             this.BtnStartRead.Location = new System.Drawing.Point(12, 106);
             this.BtnStartRead.Name = "BtnStartRead";
             this.BtnStartRead.Size = new System.Drawing.Size(211, 23);
             this.BtnStartRead.TabIndex = 1;
             this.BtnStartRead.Text = "Start";
             this.BtnStartRead.UseVisualStyleBackColor = true;
+            this.BtnStartRead.Click += new System.EventHandler(this.BtnStartRead_Click);
             // 
             // BtnExit
             // 
